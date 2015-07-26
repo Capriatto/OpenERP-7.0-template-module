@@ -13,6 +13,6 @@
 
 	],
 	'qweb': [''],
-    'css': [''],
+    	'css': [''],
 	'installable' : True
 }
