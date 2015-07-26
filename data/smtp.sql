@@ -1,3 +1,5 @@
+#Setting default server for email management.
+
 update ir_mail_server set
 name = 'email_server',
 smtp_host = '00.00.00.00',
