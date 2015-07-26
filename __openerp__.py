@@ -13,6 +13,6 @@
 
 	],
 	'qweb': ['static/src/xml/custom_access_login.xml'],
-    'css': ['static/src/css/custom_login.css','static/src/css/custom_field.css'],
+	'css': ['static/src/css/custom_login.css','static/src/css/custom_field.css'],
 	'installable' : True
 }
