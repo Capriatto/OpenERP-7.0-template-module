@@ -2,17 +2,15 @@
 # -*- coding: utf-8 -*-
 
 {
-	'name' : 'Test',
+	'name' : 'OpenErp7_Template',
 	'version' : '1.0',
 	'depends' : ['base'],
-	'author' : 'Author',
-	'category' : 'Tools',
-	'description' : 'Just a Template, duh!',
+	'author' : 'Capriatto',
+	'category' : 'tools',
+	'description' : 'This module is a template it allows you create a custom module fastly.',
 	'website' : 'https://capriatto.github.io',
 	'data' : [
-
+			'views/model_view.xml',
 	],
-	'qweb': ['static/src/xml/custom_access_login.xml'],
-	'css': ['static/src/css/custom_login.css','static/src/css/custom_field.css'],
-	'installable' : True
+	'installable' : True,
 }

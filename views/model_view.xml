@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<openerp>
+  <data>
+    <!-- Top menu item -->
+    <menuitem name="Sample" id="base.sample_menu"/>
+
+    <!-- Form View -->
+    <record model="ir.ui.view" id="sample_view_form">
+      <field name="name">sample.form.view</field>
+      <field name="model">sample</field>
+      <field name="arch" type="xml">
+        <form string="Sample" version="7.0">
+          <group>
+            <field name="name"/>
+            <field name="active"/>
+          </group>
+        </form>
+      </field>
+    </record>
+
+    <!-- Tree View -->
+    <record model="ir.ui.view" id="sample_view_tree">
+      <field name="name">sample.tree.view</field>
+      <field name="model">sample</field>
+      <field name="arch" type="xml">
+        <tree string="Sample">
+          <field name="name"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- Action -->
+
+    <record model="ir.actions.act_window" id="openerp_template_action">
+      <field name="name">Sample</field>
+      <field name="res_model">sample</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Configuration" parent="base.sample_menu"
+      id="base.sample_menuitem" sequence="20" />
+
+      <menuitem name="Sample" parent="base.sample_menuitem" id="menu_sample" sequence="3"/>
+
+      <menuitem name="Sample1" parent="menu_sample" id="menu_sampleitem" action="openerp_template_action" />
+
+    </data>
+  </openerp>
